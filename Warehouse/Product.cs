@@ -7,7 +7,8 @@ using System.Xml;
 
 namespace Warehouse
 {
-    public class Product
+    // Паттерн прототип (возможное клонирование объекта)
+    public class Product : ICloneable
     {
         public string Name { get; set; }
         public int Amount { get; set; }
@@ -30,6 +31,11 @@ namespace Warehouse
             XmlElement xRoot = xDoc.DocumentElement;
 
             return xRoot.ChildNodes.Count;
+        }
+
+        public object Clone()
+        {
+            return new Product(Name = this.Name, Amount = this.Amount, Capacity = this.Capacity);
         }
     }
 }

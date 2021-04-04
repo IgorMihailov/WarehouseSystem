@@ -261,5 +261,14 @@ namespace Warehouse
             return true;
         }
 
+        private void Market_Click(object sender, RoutedEventArgs e)
+        {
+            new Customer().SeeProducts(new Store());
+        }
+
+        private void Organization_Click(object sender, RoutedEventArgs e)
+        {
+            new Organization().PrintHead();
+        }
     }
 }

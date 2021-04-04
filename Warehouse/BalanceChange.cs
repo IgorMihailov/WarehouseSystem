@@ -21,4 +21,29 @@ namespace Warehouse
             this.Type = type;
         }
     }
+
+    //class BalanceImport : BalanceChange 
+    //{
+    //    public int Type = 1;
+    //    public BalanceImport(string product, string supplier, int amount, int type)
+    //    {
+    //        this.Product = product;
+    //        this.Supplier = supplier;
+    //        this.Amount = amount;
+    //        this.Type = type;
+    //    }
+    //}
+
+    //class BalanceExport : BalanceChange
+    //{
+    //    public int Type = 1;
+    //    public Balance(string product, string supplier, int amount, int type)
+    //    {
+    //        this.Product = product;
+    //        this.Supplier = supplier;
+    //        this.Amount = amount;
+    //        this.Type = type;
+    //    }
+
+    //}
 }

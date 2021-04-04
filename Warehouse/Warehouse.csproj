@@ -98,10 +98,13 @@
     <Compile Include="ImportWindow.xaml.cs">
       <DependentUpon>ImportWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InputValidator.cs" />
+    <Compile Include="Organization.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductWindow.xaml.cs">
       <DependentUpon>ProductWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Store.cs" />
     <Compile Include="Supplier.cs" />
     <Compile Include="SupplierWindow.xaml.cs">
       <DependentUpon>SupplierWindow.xaml</DependentUpon>

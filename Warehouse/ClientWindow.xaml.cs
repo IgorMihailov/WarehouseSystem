@@ -120,6 +120,19 @@ namespace Warehouse
                 return;
             }
 
+            // Валидация
+            var validity = true;
+            InputValidator validator = new InputValidator();
+            validity = validity && validator.CheckInput(name, new NameCheck());
+            validity = validity && validator.CheckInput(phone, new PhoneCheck());
+            validity = validity && validator.CheckInput(email, new EmailCheck());
+
+            if (validity == false)
+            {
+                this.Warning.Visibility = Visibility.Visible;
+                return;
+            }
+
             Client client = new Client(name, phone, email);
 
             if (this.ClientId != -1)

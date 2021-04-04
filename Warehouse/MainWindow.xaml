@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Warehouse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinWidth="500" MinHeight="300" Name="Main">
+        Title="MainWindow" Height="450" Width="800" MinWidth="500" MinHeight="300" Name="Main" Background="#F4F6F9">
 
     <DockPanel>
         <Menu DockPanel.Dock="Top" IsMainMenu="True" VerticalAlignment="Top" Height="40" >
@@ -14,6 +14,8 @@
             <MenuItem Header="Загрузка" Name="ImportTable" Click="ImportTable_Click"></MenuItem>
             <MenuItem Header="Отгрузка" Name="ExportTable" Click="ExportTable_Click"></MenuItem>
             <MenuItem Header="Баланс" Name="BalanceTable" Click="BalanceTable_Click"></MenuItem>
+            <MenuItem Header="Магазин" Name="Market" Click="Market_Click"></MenuItem>
+            <MenuItem Header="Сотрудники" Name="Organization" Click="Organization_Click"></MenuItem>
         </Menu>
         
         <StackPanel DockPanel.Dock="Right" Margin="40 0">
@@ -26,6 +28,6 @@
             <Button x:Name="EditBtn" Padding="10" Content="Изменить" Click="EditBtn_Click"/>
             <Button x:Name="DelBtn" Padding="10" Content="Удалить" Click="DelBtn_Click"/>
         </StackPanel>
-        <DataGrid Name="MainTable" CanUserSortColumns="False"></DataGrid>
+        <DataGrid Name="MainTable" CanUserSortColumns="False" Background="#F4F6F9"></DataGrid>
     </DockPanel>
 </Window>
